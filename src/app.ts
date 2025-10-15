@@ -32,7 +32,7 @@ app.get('/api/users', (_: Request, res: Response) => {
     { id: 2, name: 'Jane Doe' },
     { id: 3, name: 'Alice' },
     { id: 4, name: 'Bob' },
-    { id: 5, name: 'Samit Koyom' }
+    { id: 5, name: 'Jutathip Chanavittayakul' }
   ]
   res.json(users)
 })
