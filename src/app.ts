@@ -18,13 +18,23 @@ app.get('/api/hello', (_: Request, res: Response) => {
     message: 'Hello from Express API!'
   })
 })
-
+//
 // GET /api/health
 app.get('/api/health', (_: Request, res: Response) => {
   res.json({
     status: 'UP'
   })
 })
-
+// GET /api/users
+app.get('/api/users', (_: Request, res: Response) => {
+  const users = [
+    { id: 1, name: 'John Doe' },
+    { id: 2, name: 'Jane Doe' },
+    { id: 3, name: 'Alice' },
+    { id: 4, name: 'Bob' },
+    { id: 5, name: 'Samit Koyom' }
+  ]
+  res.json(users)
+})
 // Start server
 app.listen(port, () => console.log(`Application is running on port ${port}`))
