@@ -29,6 +29,7 @@ app.get('/api/health', (_: Request, res: Response) => {
 app.get('/api/users', (_: Request, res: Response) => {
   const users = [
     { id: 1, name: 'Jutathip Chanavittayskul' }
+    { id: 2, name: 'Jutathip' }
   ]
   res.json(users)
 })
